@@ -134,6 +134,20 @@ Response:
 #### DELETE /tarefas/{id}
 Response: Vazia
 
+#### (Opcional) PATCH /tarefas/{id}/concluir
+Conclui a Tarefa adicionando a data atual no atributo `dataConclusao`.
+
+Response:
+```
+{
+  id: idType,
+  titulo: string,
+  descricao?: string,
+  dataLimite?: dateString,
+  dataConclusao?: dateString
+}
+```
+
 ## Opcionais
   - A autenticação como um todo é um opcional. Não será um problema caso não seja feita. Foi adicionada somente para aumentar o nível de complexidade e não ser simplesmente um CRUD.
   - Permitir que o usuário visualize, edite e delete somente as Tarefas criadas por ele.
@@ -145,3 +159,4 @@ Response: Vazia
   - `dateString`: string no formato ISO Date ("yyyy-MM-dd"). Ex: "2024-07-24"
 
 Obs: Campos com um "?" no final são campos opcional. Nas responses os campos opcionais devem vir com o valor `null` caso o valor não exista.
+  
