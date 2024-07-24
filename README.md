@@ -132,8 +132,12 @@ Response:
 }
 ```
 
+---
+
 #### DELETE /tarefas/{id}
 Response: Vazia
+
+---
 
 #### (Opcional) PATCH /tarefas/{id}/concluir
 Conclui a Tarefa adicionando a data atual no atributo `dataConclusao`.
@@ -148,6 +152,8 @@ Response:
   dataConclusao?: dateString
 }
 ```
+
+---
 
 ## Opcionais
   - A autenticação como um todo é um opcional. Não será um problema caso não seja feita. Foi adicionada somente para aumentar o nível de complexidade e não ser simplesmente um CRUD.
