@@ -52,6 +52,7 @@ Response:
 - A forma como o token será gerado e como autenticação que será feita internamente fica a critério do desenvolvedor. Basta seguir o padrão de token enviado no header `Authorization` nas requests.
 - O campo `username` deve ser único entre os usuários, ou seja, não podem haver dois usuários com o mesmo `username`.
 
+---
 
 ## Tarefas
 
