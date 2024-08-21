@@ -11,7 +11,11 @@ Request data:
 }
 ```
 Response:
-Vazia
+```
+{
+  token: string
+}
+```
 
 ---
 
@@ -26,11 +30,7 @@ Request data:
 Response:
 ```
 {
-  authToken: string,
-  userInfo: {
-    name: string,
-    username: string
-  }
+  token: string
 }
 ```
 
